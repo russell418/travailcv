@@ -1,0 +1,169 @@
+body{
+    background-color: beige;
+}
+
+.marge{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.bio
+{
+    text-align: justify;
+}
+
+header{
+    width: 100%;
+    background-color:#C1C1C1;
+    display: table;
+}
+
+
+header img{
+    width: 200px;
+    height: 200px;
+    margin-left: 600px;
+    margin-top: 3px;
+    border-radius: 120px;
+}
+
+header h1, header img{
+    float: left;
+}
+header h1{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+p, h1, h2{
+    margin-left: 30px;
+}
+.elle img
+{
+    margin-left: 50px;
+}
+.ru
+{
+width: 20px;
+height: 20px;
+}
+.maman
+{
+    background: #C1C1C1;
+}
+
+/*emplacement skills2*/
+.skills2 li {
+    position: relative;
+    list-style: none;
+    margin: 30px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.skills2 li:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 45%;
+  height: 15px;
+  background-color: rgba(219,219,219);
+  opacity: 50%;
+  border-radius: 1000px;
+}
+
+.skills2 li:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 45%;
+  height: 15px;
+  background-color: rgba(40,40,40);
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+/*ces animatons font parti de la section2*/
+li.after:after {
+    animation-name: after;
+}
+
+@keyframes after {
+    to {
+        width: 39%;
+    }
+}
+
+li.corel:after {
+    animation-name: corel;
+}
+
+@keyframes corel {
+    to {
+        width: 38%;
+    }
+}
+
+li.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 35%;
+    }
+}
+
+li.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 32%;
+    }
+}
+li.eviews:after {
+    animation-name: eviews;
+}
+
+@keyframes eviews {
+    to {
+        width: 27%;
+    }
+}
+li.sql_server:after {
+    animation-name: sql_server;
+}
+
+@keyframes sql_server {
+    to {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width:876px) {
+    header img{
+        margin-left: 80px;
+        margin-top: 3px;
+    }
+    header h1{
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+    header{
+        background: #3b4f97 ;
+    }
+    .elle img{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+div .maman{
+    background: #3b4f97 ;
+
+}
+}
